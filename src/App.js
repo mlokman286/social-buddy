@@ -8,6 +8,7 @@ import {
 import './App.css';
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
+import PostDetail from "./components/PostDetail/PostDetail";
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/post/:id">
+            <PostDetail />
           </Route>
         </Switch>
       </div>
